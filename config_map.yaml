@@ -1,0 +1,13 @@
+apiVersion: v1
+data:
+  mysql_binlog_format.cnf: |+
+    [mysqld]
+    binlog-format=mixed
+
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-04-10T10:41:41Z"
+  name: mysql-configmap
+  namespace: default
+  resourceVersion: "41517"
+  uid: dfe4f340-9838-4de2-a221-3b54550bbd2b
